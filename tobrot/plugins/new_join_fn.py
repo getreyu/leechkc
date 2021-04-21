@@ -25,57 +25,40 @@ async def help_message_f(client, message):
     # display the /help
 
     await message.reply_text(
-        """Available Commands
-/rclone: This will change your drive config on fly.(First one will be default)
+        """⭕️No Rules Lah 🤪
+        ⭕️Perintah command yang Tersedia
+        
+/ savethumbnail: Mengganti thumbnail yang di upload di telegram menjadi custom.
 
-
-/gclone: This command is used to clone gdrive files or folder using gclone.
-Syntax:- `[ID of the file or folder][one space][name of your folder only(If the id is of file, don't put anything)]` and then reply /gclone to it.
+/ clearthumbnail: Menghapus thumbnail custom.
  
- 
-/log: This will send you a txt file of the logs.
+/ log: Ini akan mengirimi Anda file txt dari log.
 
-/ytdl: This command should be used as reply to a supported link
+/ ytdl: Perintah ini harus digunakan sebagai balasan ke tautan yang didukung.
 
-/pytdl: This command will download videos from youtube playlist link and will upload to telegram.
+/ pytdl: Perintah ini akan mendownload video dari link playlist youtube dan akan diunggah ke telegram.
 
-/gytdl: This will download and upload to your cloud.
+/ leech: Perintah ini harus digunakan sebagai balasan ke tautan magnetis, tautan torrent, atau tautan langsung. [Perintah ini akan SPAM obrolan dan mengirim unduhan file terpisah, jika ada lebih dari satu file, dalam torrent yang ditentukan]
 
-/gpytdl: This download youtube playlist and upload to your cloud.
+/ leechzip: Perintah ini harus digunakan sebagai balasan ke tautan magnetis, tautan torrent, atau tautan langsung. [Perintah ini akan membuat file .tar.gz dari direktori output, dan mengirim file dalam obrolan, dibagi menjadi BAGIAN masing-masing 1024MiB, karena keterbatasan Telegram]
 
-/leech: This command should be used as reply to a magnetic link, a torrent link, or a direct link. [this command will SPAM the chat and send the downloads a seperate files, if there is more than one file, in the specified torrent]
+/ leechunzip: Ini akan membuka file dan mengunggah ke telegram.
 
-/leechzip: This command should be used as reply to a magnetic link, a torrent link, or a direct link. [This command will create a .tar.gz file of the output directory, and send the files in the chat, splited into PARTS of 1024MiB each, due to Telegram limitations]
+/ renewme: Ini akan menghapus sisa unduhan yang tidak terhapus setelah mengunggah file atau setelah / membatalkan perintah.
 
-/gleech: This command should be used as reply to a magnetic link, a torrent link, or a direct link. And this will download the files from the given link or torrent and will upload to the cloud using rclone.
+/ rename: Untuk mengganti nama file telegram.
 
-/gleechzip This command will compress the folder/file and will upload to your cloud.
+Hanya bekerja dengan tautan langsung dan tautan youtube untuk saat iniSeperti Anda dapat menambahkan nama khusus sebagai awalan dari nama file asli. Seperti jika nama file Anda adalah gk.txt yang diunggah akan menjadi apa yang Anda tambahkan di CUSTOM_FILE_NAME + gk.txt
 
-/leechunzip: This will unarchive file and upload to telegram.
+Hanya berfungsi dengan tautan langsung / tautan youtube. Tanpa magnet atau torrent.
 
-/gleechunzip: This will unarchive file and upload to cloud.
+Dan juga menambahkan nama kustom seperti ...
 
-/tleech: This will mirror the telegram files to ur respective cloud .
+Anda harus memberikan tautan sebagai www.download.me/gk.txt | new.txt
 
-/tleechunzip: This will unarchive telegram file and upload to cloud.
+file akan diunggah sebagai new.txt.
 
-/getsize: This will give you total size of your destination folder in cloud.
-
-/renewme: This will clear the remains of downloads which are not getting deleted after upload of the file or after /cancel command.
-
-/rename: To rename the telegram files.
-
-Only work with direct link and youtube link for nowIt is like u can add custom name as prefix of the original file name. Like if your file name is gk.txt uploaded will be what u add in CUSTOM_FILE_NAME + gk.txt
-
-Only works with direct link/youtube link.No magnet or torrent.
-
-And also added custom name like...
-
-You have to pass link as www.download.me/gk.txt | new.txt
-
-the file will be uploaded as new.txt.
-
-How to Use?
-send any one of the available command, as a reply to a valid link/magnet/torrent. 👊""",
+Cara Penggunaan?
+kirim salah satu dari perintah yang tersedia, sebagai balasan ke tautan / magnet / torrent yang valid. 👊""",
         disable_web_page_preview=True,
     )
